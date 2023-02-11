@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meu Portifólio</title>
+  <link rel="icon" href="./icons8-code-16.png" type="image/png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="menu">
+      <h1 class="neon">Meu Portifólio</h1>
+
+    </header>
+
+    <nav class="navigation">
+      <div class="item">
+        <a href="#inicio-go">Início</a>
+      </div>
+      <div class="item">
+        <a href="#h1sobre">Sobre mim</a>
+      </div>
+      <div class="item">
+        <a href="#h1projetos">Projetos</a>
+      </div>
+      <div class="item">
+        <a href="#h1habilidades">Habilidades</a>
+      </div>
+
+      <div class="checkbox-wrapper-57" id="checkbox">
+        <label class="botao">
+          <input type="checkbox">
+          <div class="checkmark">☀</div>
+        </label>
+      </div>
+
+    </nav>
+
+    <main class="content">
+      <span id="inicio-go">.</span>
+      <section class="inicio tamanho init-hidden">
+        <h1 class="nome">Júnior</h1>
+        <h1 class="nome1">Fábio</h1>
+        <img src="carbon.png" id="carbon">
+      </section>
+      <h1 id="h1sobre">Sobre Mim</h1>
+      <section class="sobre tamanho init-hidden">
+
+
+        <article class="sobreMim">
+
+          <h1>Olá,mundo! </h1>
+          <h2>Desenvolvedor Full-Stack</h2>
+          <p>Meu nome é Fábio Júnior, sou de Niterói RJ, cursando
+            Sistemas de Informação na Unilasalle-RJ.</p>
+          <p>No início do curso tive preferência pela parte full-stack e então passei a estudar e fazer cursos da
+            área,
+            me
+            aprofundando mais ainda a cada dia!</p>
+          <p>Desde então percebi uma necessidade de fazer um portifólio por mais básico que seja!</p>
+          <p>Desde que comecei a progamar na faculdade me apaixonei pelo ramo e então agora só penso nisso e se a
+            gente
+            trabalha ou estuda oque gosta tudo fica melhor né.</p>
+
+          <button id="botaoin"><a target="_blank"
+              href="https://www.linkedin.com/in/f%C3%A1bio-da-concei%C3%A7%C3%A3o-batista-j%C3%BAnior-7a8537218/">Linkedin<img
+                src="in.png"></a></button>
+          <button><a href="Fábio_Júnior_Curriculo.pdf" download="Currículo_fábio_júnior">Currículo<img
+                src="download.png"></a></button>
+          <button onclick="copyToClipboard('dev.fabio.junior@gmail.com')"><a>Email<img
+                src="gmail.png"></a></button><span class="alert">Email copiado!</span>
+        </article>
+        <img src="Typing.gif" class="typing">
+
+      </section>
+      <h1 id="h1projetos">Meus Projetos</h1>
+      <section class="projetos tamanho init-hidden">
+        <div class="projetos_display">
+          <div class="projeto">
+            <a href="https://projetinho-calculadora.fabiojunior18.repl.co/" target="_blank">
+              <img src="calculadora.png">
+              <span class="desc">
+                <h1>Calculadora Digital</h1>
+                <p>Feita com HTML, CSS e JavaScript</p>
+              </span>
+            </a>
+          </div>
+          <div class="projeto">
+            <a href="https://projetinho-jogo-da-velha.fabiojunior18.repl.co/" target="_blank">
+              <img src="jogodavelha.png">
+              <span class="desc">
+                <h1>Jogo da Velha</h1>
+                <p>Front feito com HTML CSS</p>
+                <p>Backend feito com JS</p>
+              </span>
+            </a>
+          </div>
+          <div class="projeto">
+            <a href="https://projetinho-login.fabiojunior18.repl.co/" target="_blank">
+              <img src="login.png">
+              <span class="desc">
+                <h1>Tela de login</h1>
+                <p>Feito com HTML, CSS e JavaScript</p>
+                <p>Single page, validações com JS</p>
+                <p>Responsividade - WIP</p>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="projetos_display verMais">
+          <div class="projeto">
+            <a href="https://projetinho-raposas.fabiojunior18.repl.co/" target="_blank">
+              <img src="foxes.png">
+              <span class="desc">
+                <h1>Site sobre Raposas</h1>
+                <p>Feito com HTML, CSS e JavaScript</p>
+                <p>Uma grande amostra do meu front-end!</p>
+              </span>
+            </a>
+          </div>
+          <div class="projeto">
+            <a href="https://projetinho-to-do-list.fabiojunior18.repl.co/" target="_blank">
+              <img src="todolist.png">
+              <span class="desc">
+                <h1>Lista de afazeres</h1>
+                <p>Front feito com HTML CSS</p>
+                <p>C.R.U.D</p>
+                <p>Backend feito com JS</p>
+              </span>
+            </a>
+          </div>
+          <div class="projeto">
+            <a href="https://consumo-de-apis-com-fetch.fabiojunior18.repl.co/" target="_blank">
+              <img src="usodeapi.png">
+              <span class="desc">
+                <h1>Consumo de apis com fetch</h1>
+                <p>Api de cotação de moedas (awesomeapi)</p>
+                <p>Api de verificação de cep (viacep)</p>
+              </span>
+            </a>
+          </div>
+        </div>
+        <button onclick="mostrar()" class="maisProjetos">Mais Projetos</button>
+        <span><button><a href="https://replit.com/@FabioJunior18" target="_blank">Replit</a></button>
+          <button><a href="https://github.com/fabiojr0" target="_blank">Github</a></button></span>
+
+      </section>
+      <h1 id="h1habilidades">Minhas habilidades</h1>
+      <section class="habilidades tamanho init-hidden">
+
+
+        <div id="htmlcss">
+          <div class="habilidades-card">
+            <div class="card">
+              <div class="cover closed back">
+                <div class="card_content">
+                  <img src="htmlcss-removebg-preview.png">
+                </div>
+              </div>
+              <div class="cover open">
+                <div class="card_text">
+                  <span class="title">HTML e CSS</span>
+                  <div class="text_habilidades-card">
+                    <p>Fui apresentado a linguagem na faculdade e tenho
+                      gostando
+                      dos resultados que venho tendo.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="c">
+          <div class="habilidades-card">
+            <div class="card">
+              <div class="cover closed back">
+                <div class="card_content">
+                  <img src="logo-c-1.png">
+                </div>
+              </div>
+              <div class="cover open">
+                <div class="card_text">
+                  <span class="title">C</span>
+                  <div class="text_habilidades-card">
+                    <p>Primeira linguagem com que tive contato na programação e rapidamente me familiarizei. Então
+                      conclui um curso de lógica de programação.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="python">
+          <div class="habilidades-card">
+            <div class="card">
+              <div class="cover closed back">
+                <div class="card_content">
+                  <img src="python-removebg-preview.png">
+                </div>
+              </div>
+              <div class="cover open">
+                <div class="card_text">
+                  <span class="title">Python</span>
+                  <div class="text_habilidades-card">
+                    <p>Após ser apresentado a linguagem C passei a me interessar pela área back end e então fiz
+                      cursos de
+                      python.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="javascript">
+          <div class="habilidades-card">
+            <div class="card">
+              <div class="cover closed back">
+                <div class="card_content">
+                  <img src="js.png">
+                </div>
+              </div>
+              <div class="cover open">
+                <div class="card_text">
+                  <span class="title">JavaScript</span>
+                  <div class="text_habilidades-card">
+                    <p>Passei a estudar por conta própria e venho me adaptando muito bem a tecnologia.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <p>Direitos reservados Fábio Júnior 2022. ©</p>
+      <p>Email para contato: dev.fabio.junior@gmail.com</p>
+      <div class="icones">
+
+        <a target="_blank" href="https://replit.com/@FabioJunior18"><img src="replit.png" class="icon"></a>
+        <a target="_blank"
+          href="https://www.linkedin.com/in/f%C3%A1bio-da-concei%C3%A7%C3%A3o-batista-j%C3%BAnior-7a8537218/"><img
+            src="linkedin.png" class="icon"></a>
+        <a target="_blank" href="https://github.com/fabiojr0"><img src="github-sign.png" class="icon"></a>
+
+        <a href="Fábio_Júnior_Curriculo.pdf" target="_blank">
+          <img class="icon curriculo" src="curriculo-e-cv.png">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
